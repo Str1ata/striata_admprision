@@ -26,7 +26,6 @@ table.insert(Config.scriptsConfig, {
 		communiqueBanColor = {255, 0, 0},  -- Defina a cor das mensagens dos banimentos pro nível de punição.
 
 		-- EVENTOS (não mexa se não souber!) OBS: Esses eventos são utilizados pelo script e devem ser alterados caso sejam diferentes na sua base!
-		eventSpawn = "vRP:playerSpawn",  -- Cria um evento de spawn que ativa quando o player spawna no servidor.
 		eventClearInventory = "clearInventory",  -- Evento para limpar o inventario criado pelo script do próprio inventario.
 		eventScriptSound = "vrp_sound:source",  -- Evento para puxar áudio do script vrp_sounds.
 		eventSoundName = 'jaildoor',  -- Arquivo do áudio de celas do vrp_sounds.
@@ -35,8 +34,6 @@ table.insert(Config.scriptsConfig, {
 
 		-- BANCO DE DADOS (não mexa se não souber!)
 		dbTime = "prisaoAdm",  -- Nome da coluna onde ficará o tempo do player preso.
-		dbFine = "vRP:multas",  -- Nome da coluna onde fica as multas do player. -- OBS: É necessário que este registros esteja na tebela (vrp_user_data)!
-		dbTimePolice = "vRP:prisao",  -- Nome da coluna onde fica o tempo do player preso pela polícia (Prisão normal). -- OBS: É necessário que este registros esteja na tebela (vrp_user_data)!
 		dbNivel = "nivelDePunicao",  -- Nome da coluna onde ficará p nível de punição do player.
 
 
@@ -168,7 +165,7 @@ table.insert(Config.scriptsConfig, {
 			level1Motive = "(Motivo: Nivel 1 de punição)",
 			level2Motive = "(Motivo: Nivel 2 de punição)",
 			level3BanMotive = "(Motivo: Nivel 3 de punição)",
-			level3Ban = "Foi aplicado banimento permanente para:",
+			level3Ban = "Foi aplicado um banimento permanente para o passaporte:",
 			timeAdd = "Foi aplicado mais",
 			timeAdd2 = "ja estava preso e foi contabilizado mais",
 			minutesFor = "minutos para:",
