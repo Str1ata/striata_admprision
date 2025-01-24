@@ -1,7 +1,7 @@
 {
     "scriptConfig": {
         "webhook": "",
-        "admPermissions": ["owner.permissao","admin.permissao","mod.permissao"],
+        "admPermissions": ["admin.permissao"],
         "nivel1": 3,
         "nivel2": 6,
         "nivel3": 9,
@@ -19,52 +19,78 @@
         "eventClearInventory": "clearInventory",
         "eventScriptSound": "vrp_sound:source",
         "eventSoundName": "jaildoor",
-        "eventChatMessage": "chatMessage",
+        "eventChatAddMessage": "chat:addMessage",
         "eventNotify": "Notify",
         "dbTime": "prisaoAdm",
         "dbNivel": "nivelDePunicao",
-        "cdsEnter": [2048.96,2987.51,-67.3],
-        "cdsEscape": [2044.92,2981.93,-67.3],
-        "cdsSpawn": [2059.15,2961.11,-67.3],
-        "cdsExit": [2050.02,2949.53,47.74],
-        "cdsDistanceEscape": [2055.05,2974.93,-67.3],
-        "distanceEscape": 20,
+        "coords": {
+            "fivem": {
+                "cdsEnter": [2048.96,2987.51,-67.3],
+                "cdsEscape": [2044.92,2981.93,-67.3],
+                "cdsSpawn": [2059.15,2961.11,-67.3],
+                "cdsExit": [2050.02,2949.53,47.74],
+                "cdsDistanceEscape": [2055.05,2974.93,-67.3],
+                "distanceEscape": 20
+            },
+            "redm": {
+                "cdsEnter": [-322.81,-151.95,51.07],
+                "cdsEscape": [-324.44,-149.56,51.07],
+                "cdsSpawn": [-326.39,-153.97,51.07],
+                "cdsExit": [-330.08,-148.19,50.86],
+                "cdsDistanceEscape": [-325.10,-151.80,51.07],
+                "distanceEscape": 5
+            }
+        },
         "clothes": true,
         "prisonerClothes": {
             "prisoner": {
-                "1885233650": {
-                    "1": [0,0,2],
-                    "3": [0,0,2],
-                    "4": [27,2,2],
-                    "5": [0,0,2],
-                    "6": [34,0,2],
-                    "7": [0,0,2],
-                    "8": [15,0,2],
-                    "9": [0,0,2],
-                    "10": [-1,0,2],
-                    "11": [146,7],
-                    "p0": [-1,0],
-                    "p1": [-1,0],
-                    "p2": [-1,0],
-                    "p6": [-1,0],
-                    "p7": [-1,0]
+                "fivem": {
+                    "1885233650": {
+                        "1": [0,0,2],
+                        "3": [0,0,2],
+                        "4": [27,2,2],
+                        "5": [0,0,2],
+                        "6": [34,0,2],
+                        "7": [0,0,2],
+                        "8": [15,0,2],
+                        "9": [0,0,2],
+                        "10": [-1,0,2],
+                        "11": [146,7],
+                        "p0": [-1,0],
+                        "p1": [-1,0],
+                        "p2": [-1,0],
+                        "p6": [-1,0],
+                        "p7": [-1,0]
+                    },
+                    "-1667301416": {
+                        "1": [0,0,2],
+                        "3": [4,0,2],
+                        "4": [66,6,2],
+                        "5": [0,0,2],
+                        "6": [35,0,2],
+                        "7": [-1,0,2],
+                        "8": [17,0,2],
+                        "9": [-1,0,2],
+                        "10": [-1,0,2],
+                        "11": [247,13,2],
+                        "p0": [-1,0],
+                        "p1": [-1,0],
+                        "p2": [-1,0],
+                        "p6": [-1,0],
+                        "p7": [-1,0]
+                    }
                 },
-                "-1667301416": {
-                    "1": [0,0,2],
-                    "3": [4,0,2],
-                    "4": [66,6,2],
-                    "5": [0,0,2],
-                    "6": [35,0,2],
-                    "7": [-1,0,2],
-                    "8": [17,0,2],
-                    "9": [-1,0,2],
-                    "10": [-1,0,2],
-                    "11": [247,13,2],
-                    "p0": [-1,0],
-                    "p1": [-1,0],
-                    "p2": [-1,0],
-                    "p6": [-1,0],
-                    "p7": [-1,0]
+                "redm": {
+                    "-171876066": {
+                        "Shirt": ["0x5BA76CCF",0,0,0,0],
+                        "Pant": ["0x216612F0",0,0,0,0],
+                        "Boots": ["0x1CCEE58D",0,0,0,0]
+                    },
+                    "-1481695040": {
+                        "Shirt": ["0x6AB27695",0,0,0,0],
+                        "Pant": ["0x75BC0CF5",0,0,0,0],
+                        "Boots": ["0x14683CDF",0,0,0,0]
+                    }
                 }
             }
         }
@@ -126,7 +152,7 @@
             "timeAdd": "ja estava preso e foi contabilizado mais:"
         },
         "chat": {
-            "fontMensage": "[Prefeitura]",
+            "fontMensage": "[Prefeitura]:",
             "staff": "Funcionario(A):",
             "arrest": "prendeu:",
             "scheduledTheArrest": "agendou a prisao do passaporte:",
