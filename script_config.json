@@ -20,7 +20,6 @@
         "eventScriptSound": "vrp_sound:source",
         "eventSoundName": "jaildoor",
         "eventChatAddMessage": "chat:addMessage",
-        "eventNotify": "Notify",
         "dbTime": "prisaoAdm",
         "dbNivel": "nivelDePunicao",
         "coords": {
